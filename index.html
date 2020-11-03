@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HW#5 - Nikita Chkhaidze</title>
+    <style type='text/css'>
+        .container {
+            width: 30%;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        legend {
+            color: red;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        fieldset {
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .output-field {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <fieldset>
+                <legend>Large Hamburgers</legend>
+                <label>
+                    Large Hamburger with cheese
+                    <input type="number" name='largeHamburgerCheese' value='largeHamburgerCheese' min='1'>
+                </label>
+                <label>
+                    Large Hamburger with salad
+                    <input type="number" name='largeHamburgerSalad' value='largeHamburgerSalad' min='1'>
+                </label>
+                <label>
+                    Large Hamburger with potato
+                    <input type="number" name='largeHamburgerPotato' value='largeHamburgerPotato' min='1'>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Small Hamburgers</legend>
+                <label>
+                    Small Hamburger with cheese
+                    <input type="number" name='smallHamburgerCheese' value='smallHamburgerCheese' min='1'>
+                </label>
+                <label>
+                    Small Hamburger with salad
+                    <input type="number" name='smallHamburgerSalad' value='smallHamburgerSalad' min='1'>
+                </label>
+                <label>
+                    Small Hamburger with potato
+                    <input type="number" name='smallHamburgerPotato' value='smallHamburgerPotato' min='1'>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Beverage</legend>
+                <label>
+                    Cola
+                    <input type="number" name='cola' value='cola' min='1'>
+                </label>
+                <label>
+                    Coffee
+                    <input type="number" name='coffee' value='coffee' min='1'>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Salads</legend>
+                <label>
+                    Cesar
+                    <input type="number" name='cesarSalad' value='cesarSalad' min='1'>
+                </label>
+                <label>
+                    Olivier
+                    <input type="number" name='olivierSalad' value='olivierSalad' min='1'>
+                </label>
+            </fieldset>
+            <button type="submit">Calculate price and calories</button>
+            <div class="output-field"></div>
+        </form>
+    </div>
+</body>
+
+</html>
